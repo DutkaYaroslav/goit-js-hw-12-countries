@@ -31,7 +31,11 @@ length: 1 --}}
     <div class="page-result_box-items">
         <p>CAPITAL: {{capital}}</p>
         <p>POPULATION: {{population}}</p>
-        <p>LANGUAGES:{{languages}}</p>
-    </div>
-    <img class="page-result_list-img" src="{{flag}}">
+        <p>LANGUAGES:{{#each languages}}
+<li class="lang-list__item">{{this.name}}</li>
+{{/each}}
+
+</p>
+</div>
+<img class="page-result_list-img" src="{{flag}}">
 </li>

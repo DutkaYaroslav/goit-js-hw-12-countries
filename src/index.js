@@ -56,7 +56,6 @@ function showCountry(country) {
   const markUp = showFullInfo(country);
 
   refs.result.insertAdjacentHTML('beforeend', markUp);
-  console.log(markUp);
 }
 
 function listCountry(countriesArray) {
